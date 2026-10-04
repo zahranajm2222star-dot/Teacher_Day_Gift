@@ -1,0 +1,214 @@
+[10/4/2026 1:44 PM] 🌸 ออรูอา: <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>روز معلم مبارک 🌷</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #fffafa;
+            font-family: Tahoma, Arial, sans-serif;
+            color: #5a3040;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #c94f7c;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #8a6873;
+            margin-bottom: 25px;
+        }
+
+        /* عکس */
+        .teacher-image {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #f3b6ca;
+            box-shadow: 0 5px 20px rgba(180, 90, 120, 0.25);
+            margin-bottom: 25px;
+        }
+
+        /* کارت‌ها */
+        .card {
+            background: #f8c8d8;
+            border-radius: 22px;
+            padding: 22px;
+            margin: 18px 0;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(150, 80, 100, 0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            background: #f5b8cc;
+        }
+
+        .card h2 {
+            margin: 0;
+            color: #9d315c;
+        }
+
+        .content {
+            display: none;
+            margin-top: 18px;
+            padding: 18px;
+            background: #fff;
+            border-radius: 15px;
+            line-height: 2;
+            text-align: right;
+        }
+
+        .card.active .content {
+            display: block;
+        }
+
+        .flower {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #a77a88;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌷 روز معلم مبارک 🌷</h1>
+
+        <p class="subtitle">
+            برای معلمی که با مهربانی، چراغ راه ماست
+        </p>
+
+        <!-- عکس -->
+        <img
+            src="teacher.jpg"
+            alt="Teacher"
+            class="teacher-image"
+        >
+
+        <!-- کارت اول -->
+        <div class="card" onclick="openCard(this)">
+            <div class="flower">🌸</div>
+
+            <h2>پیام انگلیسی</h2>
+
+            <div class="content">
+                <h3>Happy Teacher's Day! 🌷</h3>
+
+                <p>
+                    Thank you for your patience, kindness,
+                    and for inspiring us to learn and grow.
+                </p>
+
+                <p>
+                    A great teacher can change a life
+                    with knowledge, kindness, and hope.
+                </p>
+
+                <p>
+                    We are truly grateful for everything you do.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- کارت دوم -->
+        <div class="card" onclick="openCard(this)">
+            <div class="flower">🌹</div>
+
+            <h2>پیام پشتو</h2>
+
+            <div class="content">
+                <h3>د ښوونکي ورځ مو مبارک شه! 🌹</h3>
+
+                <p>
+                    ګرانه ښوونکي!
+                    ستاسو له مینې، هڅو او لارښوونو څخه
+                    ډېره مننه.
+                </p>
+
+                <p>
+                    تاسو زموږ د زده کړې او روښانه راتلونکي
+                    لپاره یوه لویه الهام بښونکې سرچینه یاست.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- کارت سوم -->
+        <div class="card" onclick="openCard(this)">
+            <div class="flower">🌼</div>
+
+            <h2>پیام فارسی</h2>
+
+            <div class="content">
+                <h3>روز معلم مبارک باد! 🌷</h3>
+
+                <p>
+                    معلم عزیز،
+                    از شما برای تمام صبر، مهربانی و دانشی
+                    که به ما هدیه می‌دهید، سپاسگزاریم.
+                </p>
+[10/4/2026 1:44 PM] 🌸 ออรูอา: <p>
+                    شما تنها درس نمی‌دهید؛
+                    بلکه به ما یاد می‌دهید چگونه
+                    بهتر ببینیم، بهتر بیندیشیم و بهتر زندگی کنیم.
+                </p>
+
+                <p>
+                    روزتان مبارک، آموزگار مهربان ما. ❤️
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            با سپاس و احترام 🌷
+        </div>
+
+    </div>
+
+
+    <script>
+        function openCard(card) {
+
+            // بستن کارت‌های دیگر
+            document.querySelectorAll(".card").forEach(function(item) {
+                if (item !== card) {
+                    item.classList.remove("active");
+                }
+            });
+
+            // باز و بسته کردن کارت انتخاب‌شده
+            card.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
